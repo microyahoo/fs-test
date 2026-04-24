@@ -1,0 +1,32 @@
+---
+- name: 配置第一个客户端到所有客户端的 root 免密
+  hosts: all
+  vars:
+    first_client: "10.235.4.59"
+  tasks:
+    - name: 在第一个客户端上生成 SSH 密钥
+      ansible.builtin.shell:
+        cmd: |
+          if [ ! -f /root/.ssh/id_rsa ]; then
+            ssh-keygen -t rsa -N '' -f /root/.ssh/id_rsa
+          fi
+          cat /root/.ssh/id_rsa.pub
+      register: pubkey_result
+      when: inventory_hostname == first_client
+      delegate_to: "{{ first_client }}"
+
+    - name: 保存公钥内容
+      ansible.builtin.set_fact:
+        first_client_pubkey: "{{ pubkey_result.stdout | trim }}"
+      when: inventory_hostname == first_client
+      delegate_to: "{{ first_client }}"
+
+    - name: 将第一个客户端的公钥添加到所有客户端
+      ansible.builtin.lineinfile:
+        path: /root/.ssh/authorized_keys
+        line: "{{ hostvars[first_client]['first_client_pubkey'] }}"
+        create: yes
+        mode: '0600'
+        owner: root
+        group: root
+      when: hostvars[first_client]['first_client_pubkey'] is defined

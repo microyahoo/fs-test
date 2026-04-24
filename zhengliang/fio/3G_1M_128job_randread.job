@@ -1,0 +1,14 @@
+[mytest]
+directory=/vepfsE-test/zl/fio/xxx/dir1/dir2/dir3/dir4/dir5/dir6/dir7/3Gfile_2
+ioengine=sync
+direct=1
+iodepth=1
+thread
+rw=randread
+bs=1M
+size=3G
+numjobs=128
+runtime=300
+ramp_time=30
+group_reporting
+time_based

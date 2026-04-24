@@ -1,0 +1,461 @@
+hostname=vepfsB-training-fio-test-11, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-10, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-12, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-09, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-06, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-08, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-04, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-01, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-05, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-02, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-07, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+hostname=vepfsB-training-fio-test-03, be=0, 64-bit, os=Linux, arch=x86-64, fio=fio-3.7, flags=1
+<vepfsB-training-fio-test-05> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-05> ...
+<vepfsB-training-fio-test-02> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, <vepfsB-training-fio-test-07> mytest: (g=0): rw=randread, ioengine=sync, iodepth=1
+bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, <vepfsB-training-fio-test-02> ...
+ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-07> ...
+<vepfsB-training-fio-test-01> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-01> ...
+<vepfsB-training-fio-test-03> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-03> ...
+<vepfsB-training-fio-test-01> Starting <vepfsB-training-fio-test-02> Starting <vepfsB-training-fio-test-07> Starting 64 threads64 threads64 threads
+
+
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> Starting 64 threads
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-08> mytest: (g=0): rw=randread, <vepfsB-training-fio-test-11> mytest: (g=0): rw=randread, <vepfsB-training-fio-test-12> ...
+<vepfsB-training-fio-test-09> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, <vepfsB-training-fio-test-10> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+ioengine=sync, iodepth=1
+bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-08> ...
+<vepfsB-training-fio-test-11> ...
+ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-09> ...
+<vepfsB-training-fio-test-10> ...
+<vepfsB-training-fio-test-04> mytest: (g=0): rw=randread, <vepfsB-training-fio-test-06> mytest: (g=0): rw=randread, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, bs=(R) 1024KiB-1024KiB, (W) 1024KiB-1024KiB, (T) 1024KiB-1024KiB, ioengine=sync, iodepth=1
+ioengine=sync, iodepth=1
+<vepfsB-training-fio-test-04> ...
+<vepfsB-training-fio-test-06> ...
+<vepfsB-training-fio-test-10> Starting <vepfsB-training-fio-test-08> Starting <vepfsB-training-fio-test-12> Starting <vepfsB-training-fio-test-09> Starting <vepfsB-training-fio-test-11> Starting <vepfsB-training-fio-test-04> Starting <vepfsB-training-fio-test-06> Starting <vepfsB-training-fio-test-05> Starting 64 threads
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+64 threads64 threads
+
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+64 threads64 threads
+
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+64 threads
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+64 threads
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+64 threads
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-03> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-07> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-02> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-10> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-05> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-08> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-01> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-04> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-09> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-11> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-12> mytest: Laying out IO file (1 file / 3072MiB)
+<vepfsB-training-fio-test-06> mytest: Laying out IO file (1 file / 3072MiB)
+mytest: (groupid=0, jobs=64): err= 0: pid=11733: Tue Apr 21 20:06:46 2026
+   read: IOPS=835, BW=835MiB/s (876MB/s)(2447GiB/3000190msec)
+    clat (msec): min=4, max=572, avg=76.63, stdev=84.61
+     lat (msec): min=4, max=572, avg=76.63, stdev=84.61
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   10], 10.00th=[   12], 20.00th=[   15],
+     | 30.00th=[   21], 40.00th=[   30], 50.00th=[   44], 60.00th=[   62],
+     | 70.00th=[   84], 80.00th=[  121], 90.00th=[  207], 95.00th=[  275],
+     | 99.00th=[  363], 99.50th=[  393], 99.90th=[  439], 99.95th=[  456],
+     | 99.99th=[  493]
+   bw (  KiB/s): min= 2043, max=61440, per=1.56%, avg=13360.71, stdev=5788.94, samples=383961
+   iops        : min=    1, max=   60, avg=13.00, stdev= 5.66, samples=383961
+  lat (msec)   : 10=5.62%, 20=24.27%, 50=24.19%, 100=21.18%, 250=18.02%
+  lat (msec)   : 500=6.71%, 750=0.01%
+  cpu          : usr=0.00%, sys=0.06%, ctx=2505784, majf=0, minf=123
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2505421,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=835MiB/s (876MB/s), 835MiB/s-835MiB/s (876MB/s-876MB/s), io=2447GiB (2627GB), run=3000190-3000190msec
+<vepfsB-training-fio-test-03> 
+mytest: (groupid=0, jobs=64): err= 0: pid=24772: Tue Apr 21 20:06:46 2026
+   read: IOPS=920, BW=921MiB/s (965MB/s)(2697GiB/3000126msec)
+    clat (msec): min=3, max=479, avg=69.51, stdev=63.78
+     lat (msec): min=3, max=479, avg=69.51, stdev=63.78
+    clat percentiles (msec):
+     |  1.00th=[    8],  5.00th=[   10], 10.00th=[   12], 20.00th=[   16],
+     | 30.00th=[   23], 40.00th=[   34], 50.00th=[   50], 60.00th=[   67],
+     | 70.00th=[   88], 80.00th=[  116], 90.00th=[  163], 95.00th=[  203],
+     | 99.00th=[  275], 99.50th=[  305], 99.90th=[  355], 99.95th=[  372],
+     | 99.99th=[  401]
+   bw (  KiB/s): min= 2043, max=53248, per=1.56%, avg=14729.10, stdev=5117.62, samples=383971
+   iops        : min=    1, max=   52, avg=14.33, stdev= 5.00, samples=383971
+  lat (msec)   : 4=0.01%, 10=6.60%, 20=20.50%, 50=23.59%, 100=24.13%
+  lat (msec)   : 250=23.29%, 500=1.89%
+  cpu          : usr=0.01%, sys=0.06%, ctx=2762564, majf=0, minf=122
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2762077,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=921MiB/s (965MB/s), 921MiB/s-921MiB/s (965MB/s-965MB/s), io=2697GiB (2896GB), run=3000126-3000126msec
+<vepfsB-training-fio-test-07> 
+mytest: (groupid=0, jobs=64): err= 0: pid=25406: Tue Apr 21 20:06:46 2026
+   read: IOPS=922, BW=923MiB/s (967MB/s)(2703GiB/3000229msec)
+    clat (msec): min=4, max=440, avg=69.36, stdev=59.27
+     lat (msec): min=4, max=440, avg=69.36, stdev=59.27
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   10], 10.00th=[   12], 20.00th=[   17],
+     | 30.00th=[   27], 40.00th=[   39], 50.00th=[   54], 60.00th=[   70],
+     | 70.00th=[   88], 80.00th=[  113], 90.00th=[  153], 95.00th=[  190],
+     | 99.00th=[  264], 99.50th=[  288], 99.90th=[  338], 99.95th=[  351],
+     | 99.99th=[  384]
+   bw (  KiB/s): min= 2043, max=51200, per=1.56%, avg=14760.76, stdev=4777.86, samples=383984
+   iops        : min=    1, max=   50, avg=14.36, stdev= 4.67, samples=383984
+  lat (msec)   : 10=5.26%, 20=18.84%, 50=23.55%, 100=27.75%, 250=23.23%
+  lat (msec)   : 500=1.37%
+  cpu          : usr=0.01%, sys=0.06%, ctx=2768688, majf=0, minf=120
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2768044,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=923MiB/s (967MB/s), 923MiB/s-923MiB/s (967MB/s-967MB/s), io=2703GiB (2903GB), run=3000229-3000229msec
+<vepfsB-training-fio-test-02> 
+mytest: (groupid=0, jobs=64): err= 0: pid=24707: Tue Apr 21 20:06:47 2026
+   read: IOPS=1010, BW=1011MiB/s (1060MB/s)(2962GiB/3000202msec)
+    clat (msec): min=3, max=496, avg=63.30, stdev=63.72
+     lat (msec): min=3, max=496, avg=63.30, stdev=63.72
+    clat percentiles (msec):
+     |  1.00th=[    8],  5.00th=[    9], 10.00th=[   10], 20.00th=[   13],
+     | 30.00th=[   19], 40.00th=[   28], 50.00th=[   40], 60.00th=[   56],
+     | 70.00th=[   77], 80.00th=[  106], 90.00th=[  157], 95.00th=[  203],
+     | 99.00th=[  279], 99.50th=[  305], 99.90th=[  351], 99.95th=[  368],
+     | 99.99th=[  401]
+   bw (  KiB/s): min= 2043, max=59392, per=1.56%, avg=16174.18, stdev=5844.98, samples=383975
+   iops        : min=    1, max=   58, avg=15.73, stdev= 5.71, samples=383975
+  lat (msec)   : 4=0.01%, 10=10.90%, 20=21.71%, 50=24.18%, 100=21.73%
+  lat (msec)   : 250=19.52%, 500=1.96%
+  cpu          : usr=0.01%, sys=0.07%, ctx=3034095, majf=0, minf=125
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=3033151,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1011MiB/s (1060MB/s), 1011MiB/s-1011MiB/s (1060MB/s-1060MB/s), io=2962GiB (3180GB), run=3000202-3000202msec
+<vepfsB-training-fio-test-05> 
+mytest: (groupid=0, jobs=64): err= 0: pid=10977: Tue Apr 21 20:06:47 2026
+   read: IOPS=999, BW=999MiB/s (1048MB/s)(2927GiB/3000113msec)
+    clat (msec): min=3, max=467, avg=64.05, stdev=52.47
+     lat (msec): min=3, max=467, avg=64.05, stdev=52.47
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   10], 10.00th=[   12], 20.00th=[   18],
+     | 30.00th=[   27], 40.00th=[   38], 50.00th=[   51], 60.00th=[   65],
+     | 70.00th=[   82], 80.00th=[  104], 90.00th=[  138], 95.00th=[  169],
+     | 99.00th=[  232], 99.50th=[  255], 99.90th=[  300], 99.95th=[  317],
+     | 99.99th=[  363]
+   bw (  KiB/s): min= 2043, max=53248, per=1.56%, avg=15983.62, stdev=4760.20, samples=383967
+   iops        : min=    1, max=   52, avg=15.55, stdev= 4.66, samples=383967
+  lat (msec)   : 4=0.01%, 10=5.23%, 20=18.12%, 50=26.67%, 100=28.73%
+  lat (msec)   : 250=20.68%, 500=0.57%
+  cpu          : usr=0.01%, sys=0.07%, ctx=2998354, majf=0, minf=120
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2997405,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=999MiB/s (1048MB/s), 999MiB/s-999MiB/s (1048MB/s-1048MB/s), io=2927GiB (3143GB), run=3000113-3000113msec
+<vepfsB-training-fio-test-10> 
+mytest: (groupid=0, jobs=64): err= 0: pid=25410: Tue Apr 21 20:06:47 2026
+   read: IOPS=911, BW=912MiB/s (956MB/s)(2671GiB/3000134msec)
+    clat (msec): min=4, max=483, avg=70.20, stdev=64.23
+     lat (msec): min=4, max=483, avg=70.20, stdev=64.23
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   11], 10.00th=[   12], 20.00th=[   17],
+     | 30.00th=[   25], 40.00th=[   36], 50.00th=[   50], 60.00th=[   67],
+     | 70.00th=[   87], 80.00th=[  115], 90.00th=[  163], 95.00th=[  207],
+     | 99.00th=[  284], 99.50th=[  309], 99.90th=[  359], 99.95th=[  376],
+     | 99.99th=[  414]
+   bw (  KiB/s): min= 2043, max=53248, per=1.56%, avg=14584.09, stdev=5078.73, samples=383987
+   iops        : min=    1, max=   52, avg=14.18, stdev= 4.97, samples=383987
+  lat (msec)   : 10=4.81%, 20=20.64%, 50=24.85%, 100=24.97%, 250=22.62%
+  lat (msec)   : 500=2.12%
+  cpu          : usr=0.01%, sys=0.06%, ctx=2735428, majf=0, minf=123
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2734939,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=912MiB/s (956MB/s), 912MiB/s-912MiB/s (956MB/s-956MB/s), io=2671GiB (2868GB), run=3000134-3000134msec
+<vepfsB-training-fio-test-01> 
+mytest: (groupid=0, jobs=64): err= 0: pid=24742: Tue Apr 21 20:06:47 2026
+   read: IOPS=903, BW=903MiB/s (947MB/s)(2647GiB/3000107msec)
+    clat (msec): min=3, max=514, avg=70.83, stdev=74.62
+     lat (msec): min=3, max=514, avg=70.83, stdev=74.62
+    clat percentiles (msec):
+     |  1.00th=[    8],  5.00th=[   10], 10.00th=[   11], 20.00th=[   14],
+     | 30.00th=[   20], 40.00th=[   29], 50.00th=[   43], 60.00th=[   59],
+     | 70.00th=[   81], 80.00th=[  115], 90.00th=[  184], 95.00th=[  241],
+     | 99.00th=[  326], 99.50th=[  351], 99.90th=[  397], 99.95th=[  414],
+     | 99.99th=[  447]
+   bw (  KiB/s): min= 2043, max=57344, per=1.56%, avg=14453.62, stdev=5754.00, samples=383968
+   iops        : min=    1, max=   56, avg=14.06, stdev= 5.62, samples=383968
+  lat (msec)   : 4=0.01%, 10=6.99%, 20=23.56%, 50=24.46%, 100=21.24%
+  lat (msec)   : 250=19.46%, 500=4.28%, 750=0.01%
+  cpu          : usr=0.00%, sys=0.06%, ctx=2711092, majf=0, minf=122
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2710517,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=903MiB/s (947MB/s), 903MiB/s-903MiB/s (947MB/s-947MB/s), io=2647GiB (2842GB), run=3000107-3000107msec
+<vepfsB-training-fio-test-04> 
+mytest: (groupid=0, jobs=64): err= 0: pid=11065: Tue Apr 21 20:06:47 2026
+   read: IOPS=916, BW=916MiB/s (961MB/s)(2684GiB/3000170msec)
+    clat (msec): min=3, max=533, avg=69.86, stdev=77.35
+     lat (msec): min=3, max=533, avg=69.86, stdev=77.35
+    clat percentiles (msec):
+     |  1.00th=[    8],  5.00th=[   10], 10.00th=[   11], 20.00th=[   14],
+     | 30.00th=[   19], 40.00th=[   27], 50.00th=[   39], 60.00th=[   54],
+     | 70.00th=[   77], 80.00th=[  113], 90.00th=[  190], 95.00th=[  251],
+     | 99.00th=[  330], 99.50th=[  355], 99.90th=[  401], 99.95th=[  418],
+     | 99.99th=[  460]
+   bw (  KiB/s): min= 2043, max=57344, per=1.56%, avg=14656.28, stdev=6091.74, samples=383994
+   iops        : min=    1, max=   56, avg=14.25, stdev= 5.95, samples=383994
+  lat (msec)   : 4=0.01%, 10=8.17%, 20=24.37%, 50=25.24%, 100=19.48%
+  lat (msec)   : 250=17.73%, 500=5.01%, 750=0.01%
+  cpu          : usr=0.01%, sys=0.06%, ctx=2748974, majf=0, minf=123
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2748487,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=916MiB/s (961MB/s), 916MiB/s-916MiB/s (961MB/s-961MB/s), io=2684GiB (2882GB), run=3000170-3000170msec
+<vepfsB-training-fio-test-09> 
+mytest: (groupid=0, jobs=64): err= 0: pid=24754: Tue Apr 21 20:06:48 2026
+   read: IOPS=863, BW=863MiB/s (905MB/s)(2529GiB/3000221msec)
+    clat (msec): min=4, max=595, avg=74.14, stdev=91.48
+     lat (msec): min=4, max=595, avg=74.14, stdev=91.48
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   10], 10.00th=[   11], 20.00th=[   14],
+     | 30.00th=[   18], 40.00th=[   25], 50.00th=[   35], 60.00th=[   49],
+     | 70.00th=[   69], 80.00th=[  111], 90.00th=[  230], 95.00th=[  296],
+     | 99.00th=[  380], 99.50th=[  405], 99.90th=[  451], 99.95th=[  468],
+     | 99.99th=[  502]
+   bw (  KiB/s): min= 2043, max=59392, per=1.56%, avg=13808.84, stdev=6559.71, samples=383978
+   iops        : min=    1, max=   58, avg=13.43, stdev= 6.41, samples=383978
+  lat (msec)   : 10=6.78%, 20=27.45%, 50=26.63%, 100=17.47%, 250=13.23%
+  lat (msec)   : 500=8.43%, 750=0.01%
+  cpu          : usr=0.00%, sys=0.06%, ctx=2590031, majf=0, minf=125
+  IO depths    : 1=101.1%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2589520,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=863MiB/s (905MB/s), 863MiB/s-863MiB/s (905MB/s-905MB/s), io=2529GiB (2715GB), run=3000221-3000221msec
+<vepfsB-training-fio-test-08> 
+mytest: (groupid=0, jobs=64): err= 0: pid=10946: Tue Apr 21 20:06:48 2026
+   read: IOPS=847, BW=847MiB/s (888MB/s)(2482GiB/3000110msec)
+    clat (msec): min=3, max=537, avg=75.55, stdev=68.31
+     lat (msec): min=3, max=537, avg=75.55, stdev=68.31
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   11], 10.00th=[   13], 20.00th=[   18],
+     | 30.00th=[   26], 40.00th=[   39], 50.00th=[   54], 60.00th=[   73],
+     | 70.00th=[   95], 80.00th=[  125], 90.00th=[  176], 95.00th=[  220],
+     | 99.00th=[  296], 99.50th=[  321], 99.90th=[  372], 99.95th=[  393],
+     | 99.99th=[  435]
+   bw (  KiB/s): min= 2043, max=51097, per=1.56%, avg=13551.53, stdev=4842.92, samples=383971
+   iops        : min=    1, max=   49, avg=13.17, stdev= 4.74, samples=383971
+  lat (msec)   : 4=0.01%, 10=3.72%, 20=20.29%, 50=23.65%, 100=24.41%
+  lat (msec)   : 250=25.14%, 500=2.80%, 750=0.01%
+  cpu          : usr=0.00%, sys=0.06%, ctx=2542049, majf=0, minf=120
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2541439,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=847MiB/s (888MB/s), 847MiB/s-847MiB/s (888MB/s-888MB/s), io=2482GiB (2665GB), run=3000110-3000110msec
+<vepfsB-training-fio-test-11> 
+mytest: (groupid=0, jobs=64): err= 0: pid=10513: Tue Apr 21 20:06:48 2026
+   read: IOPS=909, BW=910MiB/s (954MB/s)(2665GiB/3000105msec)
+    clat (msec): min=3, max=522, avg=70.36, stdev=68.39
+     lat (msec): min=3, max=522, avg=70.36, stdev=68.39
+    clat percentiles (msec):
+     |  1.00th=[    9],  5.00th=[   10], 10.00th=[   12], 20.00th=[   16],
+     | 30.00th=[   22], 40.00th=[   33], 50.00th=[   46], 60.00th=[   64],
+     | 70.00th=[   86], 80.00th=[  117], 90.00th=[  169], 95.00th=[  218],
+     | 99.00th=[  300], 99.50th=[  326], 99.90th=[  380], 99.95th=[  397],
+     | 99.99th=[  439]
+   bw (  KiB/s): min= 2043, max=65536, per=1.56%, avg=14549.75, stdev=5344.17, samples=383959
+   iops        : min=    1, max=   64, avg=14.15, stdev= 5.23, samples=383959
+  lat (msec)   : 4=0.01%, 10=5.86%, 20=22.10%, 50=24.56%, 100=22.62%
+  lat (msec)   : 250=22.00%, 500=2.86%, 750=0.01%
+  cpu          : usr=0.01%, sys=0.06%, ctx=2729072, majf=0, minf=122
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2728660,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=910MiB/s (954MB/s), 910MiB/s-910MiB/s (954MB/s-954MB/s), io=2665GiB (2861GB), run=3000105-3000105msec
+<vepfsB-training-fio-test-12> 
+mytest: (groupid=0, jobs=64): err= 0: pid=24874: Tue Apr 21 20:06:48 2026
+   read: IOPS=958, BW=959MiB/s (1005MB/s)(2808GiB/3000088msec)
+    clat (msec): min=3, max=468, avg=66.77, stdev=59.70
+     lat (msec): min=3, max=468, avg=66.77, stdev=59.70
+    clat percentiles (msec):
+     |  1.00th=[    8],  5.00th=[   10], 10.00th=[   11], 20.00th=[   16],
+     | 30.00th=[   24], 40.00th=[   35], 50.00th=[   50], 60.00th=[   65],
+     | 70.00th=[   85], 80.00th=[  110], 90.00th=[  153], 95.00th=[  190],
+     | 99.00th=[  264], 99.50th=[  288], 99.90th=[  338], 99.95th=[  359],
+     | 99.99th=[  397]
+   bw (  KiB/s): min= 2043, max=59392, per=1.56%, avg=15333.96, stdev=5097.99, samples=383983
+   iops        : min=    1, max=   58, avg=14.92, stdev= 4.98, samples=383983
+  lat (msec)   : 4=0.01%, 10=7.39%, 20=19.24%, 50=24.17%, 100=25.84%
+  lat (msec)   : 250=22.00%, 500=1.36%
+  cpu          : usr=0.01%, sys=0.07%, ctx=2876109, majf=0, minf=122
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2875629,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+All clients: (groupid=0, jobs=12): err= 0: pid=0: Tue Apr 21 20:06:48 2026
+   read: IOPS=10.0k, BW=10.7Gi (11.5G)(31.5TiB/3000229msec)
+    clat (msec): min=3, max=595, avg=69.29, stdev=65.43
+     lat (msec): min=3, max=595, avg=69.29, stdev=65.43
+   bw (  KiB/s): min= 2043, max=65536, per=0.13%, avg=14776.24, stdev=5238.14, samples=4607698
+   iops        : min=    1, max=   64, avg=14.37, stdev= 5.12, samples=4607698
+  lat (msec)   : 4=0.01%, 10=6.50%, 20=21.68%, 50=24.65%, 100=23.38%
+  lat (msec)   : 250=20.60%, 500=3.19%, 750=0.01%
+  cpu          : usr=0.01%, sys=0.06%, ctx=33002240, majf=0, minf=1467
+  IO depths    : 1=101.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=32995289,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+
+Run status group 0 (all jobs):
+   READ: bw=959MiB/s (1005MB/s), 959MiB/s-959MiB/s (1005MB/s-1005MB/s), io=2808GiB (3015GB), run=3000088-3000088msec
+<vepfsB-training-fio-test-06> 

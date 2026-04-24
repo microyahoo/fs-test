@@ -1,0 +1,8 @@
+messagescan=no
+hd=default,vdbench=/root/zhengliang/vdbench50407,user=root,shell=ssh
+hd=client1,system=10.235.4.59
+fsd=fsd1,anchor=/vepfsE-test/zl/vdbench/dir1/dir2/dir3/dir4/dir5/dir6/dir7/128-3G-1,depth=1,width=1,files=128,size=3G,shared=no,openflags=o_direct
+fwd=format,xfersize=1M,threads=32
+fwd=default,xfersize=4k,threads=128,fileio=random,fileselect=random,operation=read
+fwd=fwd1,fsd=fsd1,host=client1
+rd=rd1,fwd=fwd*,fwdrate=max,format=restart,elapsed=300,interval=1,warmup=20
