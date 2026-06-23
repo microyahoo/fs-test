@@ -36,10 +36,10 @@ java=java
 #
 # When your version of java supports 64bit you may replace '-client' with '-d64'
 if [ "$1" == "SlaveJvm" ]; then
-  $java -client -Xmx1024m -Xms128m -cp $cp Vdb.SlaveJvm $*
+  $java -d64 -Xmx8192m -Xms1024m -cp $cp Vdb.SlaveJvm $*
   exit $?
 else
-  $java -client -Xmx512m  -Xms64m  -cp $cp Vdb.Vdbmain $*
+  $java -d64 -Xmx4096m -Xms512m  -cp $cp Vdb.Vdbmain $*
   exit $?
 fi
 
