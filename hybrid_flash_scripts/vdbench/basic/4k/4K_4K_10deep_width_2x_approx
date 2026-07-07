@@ -1,0 +1,46 @@
+messagescan=no
+
+# 主机定义
+hd=default,vdbench=/root/vdbench50407/vdbench50407/,user=root,shell=ssh
+hd=hd1,system=10.3.14.48
+hd=hd2,system=10.3.14.49
+hd=hd3,system=10.3.14.50
+hd=hd4,system=10.3.14.51
+hd=hd5,system=10.3.14.52
+hd=hd6,system=10.3.14.53
+hd=hd7,system=10.3.14.54
+hd=hd8,system=10.3.14.55
+hd=hd9,system=10.3.14.56
+hd=hd10,system=10.3.14.57
+
+# 说明：对于 10-deep，直接通过 width 变化难以实现小倍率（2x/16x）的精确值。
+# 这里给出一个近似解，width=3 时取 files=52（四舍五入），总文件数与目标非常接近。
+fsd=fsd1,anchor=/mnt/nfs01/4K-D10-w3-2x-01,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd2,anchor=/mnt/nfs01/4K-D10-w3-2x-02,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd3,anchor=/mnt/nfs01/4K-D10-w3-2x-03,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd4,anchor=/mnt/nfs01/4K-D10-w3-2x-04,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd5,anchor=/mnt/nfs01/4K-D10-w3-2x-05,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd6,anchor=/mnt/nfs01/4K-D10-w3-2x-06,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd7,anchor=/mnt/nfs01/4K-D10-w3-2x-07,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd8,anchor=/mnt/nfs01/4K-D10-w3-2x-08,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd9,anchor=/mnt/nfs01/4K-D10-w3-2x-09,depth=10,width=3,files=52,size=4k,openflags=o_direct
+fsd=fsd10,anchor=/mnt/nfs01/4K-D10-w3-2x-10,depth=10,width=3,files=52,size=4k,openflags=o_direct
+
+# 工作负载与运行定义
+fwd=default,xfersize=4k,fileselect=random,fileio=random,threads=128
+fwd=fwd1,fsd=fsd1,host=hd1
+fwd=fwd2,fsd=fsd2,host=hd2
+fwd=fwd3,fsd=fsd3,host=hd3
+fwd=fwd4,fsd=fsd4,host=hd4
+fwd=fwd5,fsd=fsd5,host=hd5
+fwd=fwd6,fsd=fsd6,host=hd6
+fwd=fwd7,fsd=fsd7,host=hd7
+fwd=fwd8,fsd=fsd8,host=hd8
+fwd=fwd9,fsd=fsd9,host=hd9
+fwd=fwd10,fsd=fsd10,host=hd10
+
+rd=default,fwd=fwd*,fwdrate=max,elapsed=600,interval=1,warmup=10
+rd=rd_create,format=(restart,only),threads=256
+rd=rd_write,operation=write,format=(no,complete),forxfersize=4k
+rd=rd_read,operation=read,format=(no,complete),forxfersize=4k
+rd=rd_mix,operation=read,forrdpct=80,format=(no,complete),forxfersize=4k

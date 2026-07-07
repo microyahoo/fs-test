@@ -1,0 +1,7 @@
+
+
+# 3 深度
+mpirun -hosts xxxxxx -ppn 40 mdtest -I 1024 -z 3 -b 7 -L -T -r -u -F -w 0 -i 3 -C -d /mnt/nfs01/mdtest03
+mpirun -hosts xxxxxx -ppn 40 mdtest -I 200 -z 3 -b 7 -L -T -r -u -F -w 0 -i 3 -C -d /mnt/nfs01/mdtest035
+# 10 深度
+mpirun -hosts xxxxxx -ppn 40 mdtest -I 41 -z 10 -b 2 -L -T -r -u -F -w  0 -i 3 -C -d /mnt/nfs01/mdtest034
