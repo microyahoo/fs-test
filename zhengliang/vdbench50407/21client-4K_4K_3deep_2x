@@ -1,0 +1,46 @@
+messagescan=no
+
+#主机定义
+hd=default,vdbench=/root/vdbench50407/vdbench50407/,user=root,shell=ssh
+hd=client1,system=10.3.14.48
+hd=client2,system=10.3.14.49
+hd=client3,system=10.3.14.50
+hd=client4,system=10.3.14.51
+hd=client5,system=10.3.14.52
+hd=client6,system=10.3.14.53
+hd=client7,system=10.3.14.54
+hd=client8,system=10.3.14.55
+hd=client9,system=10.3.14.56
+hd=client10,system=10.3.14.57
+
+# 文件系统定义
+fsd=fsd1,anchor=/mnt/nfs01/4K-D3-2x-01,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd2,anchor=/mnt/nfs01/4K-D3-2x-02,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd3,anchor=/mnt/nfs01/4K-D3-2x-03,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd4,anchor=/mnt/nfs01/4K-D3-2x-04,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd5,anchor=/mnt/nfs01/4K-D3-2x-05,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd6,anchor=/mnt/nfs01/4K-D3-2x-06,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd7,anchor=/mnt/nfs01/4K-D3-2x-07,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd8,anchor=/mnt/nfs01/4K-D3-2x-08,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd9,anchor=/mnt/nfs01/4K-D3-2x-09,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+fsd=fsd10,anchor=/mnt/nfs01/4K-D3-2x-10,depth=3,width=15,files=1200,size=4k,openflags=o_direct
+
+# 文件工作负载定义
+fwd=default,xfersize=4k,fileselect=random,fileio=random,threads=128
+fwd=fwd1,fsd=fsd1,host=client1
+fwd=fwd2,fsd=fsd2,host=client2
+fwd=fwd3,fsd=fsd3,host=client3
+fwd=fwd4,fsd=fsd4,host=client4
+fwd=fwd5,fsd=fsd5,host=client5
+fwd=fwd6,fsd=fsd6,host=client6
+fwd=fwd7,fsd=fsd7,host=client7
+fwd=fwd8,fsd=fsd8,host=client8
+fwd=fwd9,fsd=fsd9,host=client9
+fwd=fwd10,fsd=fsd10,host=client10
+
+# 运行定义
+rd=default,fwd=fwd*,fwdrate=max,elapsed=600,interval=1,warmup=10
+rd=rd_create,format=(restart,only),threads=256                  # 快速创建文件树
+rd=rd_write,operation=write,format=(no,complete),forxfersize=4k  # 纯写测试
+rd=rd_read,operation=read,format=(no,complete),forxfersize=4k    # 纯读测试
+rd=rd_mix,operation=read,forrdpct=80,format=(no,complete),forxfersize=4k  # 80%读20%写混合测试
