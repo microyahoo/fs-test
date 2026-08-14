@@ -14,16 +14,16 @@ hd=client9,system=10.3.14.56
 hd=client10,system=10.3.14.57
 
 # 文件系统定义
-fsd=fsd1,anchor=/mnt/nfs01/4K-D3-16x-01,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd2,anchor=/mnt/nfs01/4K-D3-16x-02,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd3,anchor=/mnt/nfs01/4K-D3-16x-03,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd4,anchor=/mnt/nfs01/4K-D3-16x-04,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd5,anchor=/mnt/nfs01/4K-D3-16x-05,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd6,anchor=/mnt/nfs01/4K-D3-16x-06,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd7,anchor=/mnt/nfs01/4K-D3-16x-07,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd8,anchor=/mnt/nfs01/4K-D3-16x-08,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd9,anchor=/mnt/nfs01/4K-D3-16x-09,depth=3,width=15,files=9600,size=4k,openflags=o_direct
-fsd=fsd10,anchor=/mnt/nfs01/4K-D3-16x-10,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd1,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-01,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd2,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-02,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd3,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-03,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd4,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-04,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd5,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-05,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd6,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-06,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd7,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-07,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd8,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-08,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd9,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-09,depth=3,width=15,files=9600,size=4k,openflags=o_direct
+fsd=fsd10,anchor=/vepfsE-test/zl/vdbench/4K-D3-16x-10,depth=3,width=15,files=9600,size=4k,openflags=o_direct
 
 # 文件工作负载定义
 fwd=default,xfersize=4k,fileselect=random,fileio=random,threads=128

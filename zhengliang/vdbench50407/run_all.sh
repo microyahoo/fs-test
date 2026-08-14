@@ -8,11 +8,35 @@ drop_caches() {
     ansible all -i "${HOSTS}" -m shell --forks 15 -a "echo 3 > /proc/sys/vm/drop_caches"
 }
 
+create_anchor_dirs() {
+    local cfg=$1
+    local dir
+    dir=$(grep -oP '(?<=anchor=)[^,]+' "${cfg}" | sed 's|/[^/]*$||' | sort -u | head -1)
+    mkdir -p "${dir}"
+}
+
 run_test() {
     local test_name=$1
-    echo ">>> Running: ${test_name}"
-    drop_caches
-    ${VDBENCH} -f "${BASE_DIR}/${test_name}"
+    local src="${BASE_DIR}/${test_name}"
+    local tmp="${BASE_DIR}/.tmp_${test_name}_$$"
+    local random_str
+    random_str=$(cat /proc/sys/kernel/random/uuid | tr -d '-' | head -c 8)
+
+    echo ">>> Running: ${test_name} (random dir: ${random_str})"
+
+    # Rewrite anchor paths that match /vepfsE-test/zl/vdbench/... to inject the random subdir
+    if grep -q 'anchor=/vepfsE-test/zl/vdbench/' "${src}"; then
+        sed "s|anchor=/vepfsE-test/zl/vdbench/|anchor=/vepfsE-test/zl/${random_str}/vdbench/|g" \
+            "${src}" > "${tmp}"
+        create_anchor_dirs "${tmp}"
+        drop_caches
+        ${VDBENCH} -f "${tmp}"
+        rm -f "${tmp}"
+    else
+        drop_caches
+        ${VDBENCH} -f "${src}"
+    fi
+
     sleep 1m
 }
 
